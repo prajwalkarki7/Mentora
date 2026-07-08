@@ -1020,3 +1020,29 @@ color:#22C55E;
 font-weight:700;
 
 }
+
+.feature-icon svg{
+
+    width:28px;
+
+    height:28px;
+
+    stroke-width:2;
+
+}
+
+.eye-button svg{
+
+    width:20px;
+
+    height:20px;
+
+}
+
+.logo-circle svg{
+
+    width:26px;
+
+    height:26px;
+
+}

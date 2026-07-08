@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mentora | Register</title>
+
+    <meta name="description"
+          content="Create your Mentora account">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../css/register.css">
+
+</head>
+
+<body>
+
+<div class="background-blur blur-one"></div>
+<div class="background-blur blur-two"></div>
+
+<header>
+
+<nav class="navbar">
+
+<a href="../index.html"
+   class="logo">
+
+<div class="logo-circle">
+
+M
+
+</div>
+
+<span>
+
+Mentora
+
+</span>
+
+</a>
+
+<a href="../index.html"
+   class="back-home">
+
+← Back to Home
+
+</a>
+
+</nav>
+
+</header>
+
+<section class="register-section">
+
+<div class="register-container">
+
+<!-- LEFT PANEL -->
+
+<div class="register-left">
+
+<div class="left-content">
+
+<div class="badge">
+
+🚀 Join Thousands of Students
+
+</div>
+
+<h1>
+
+Join Mentora.
+
+Learn Without Limits.
+
+</h1>
+
+<p>
+
+Create your free account and unlock AI-powered learning.
+Study smarter with your own AI tutor, PDF assistant,
+and instant summarizer.
+
+</p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i data-lucide="bot"></i>
+
+</div>
+
+<h3>
+
+AI Tutor
+
+</h3>
+
+<p>
+
+Personal AI teacher available 24/7.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+    <i data-lucide="file-text"></i>
+
+</div>
+
+<h3>
+
+Ask PDF
+
+</h3>
+
+<p>
+
+Ask questions directly from your notes.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i data-lucide="notebook-pen"></i>
+
+</div>
+
+<h3>
+
+Summarizer
+
+</h3>
+
+<p>
+
+Generate clean study notes instantly.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="ai-preview">
+
+<div class="preview-header">
+
+<div class="status-dot"></div>
+
+<span>
+
+Mentora AI Online
+
+</span>
+
+</div>
+
+<div class="preview-chat">
+
+<div class="preview-message ai">
+
+👋 Welcome! Let's start learning.
+
+</div>
+
+<div class="preview-message user">
+
+Summarize Chapter 3
+
+</div>
+
+<div class="preview-message ai">
+
+Chapter 3 explains Cloud Computing,
+its characteristics, service models,
+deployment models and advantages.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+
+<div class="register-right">
+
+<div class="register-card">
+
+<div class="register-header">
+
+<h2>
+
+Create Account
+
+</h2>
+
+<p>
+
+Start your AI learning journey today.
+
+</p>
+
+</div>
+
+<form id="registerForm">
+
+<div class="input-group">
+
+<label>
+
+Full Name
+
+</label>
+
+<input
+type="text"
+id="fullname"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Email Address
+
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Create password"
+required>
+
+<button
+type="button"
+id="togglePassword"
+class="eye-button">
+
+<i data-lucide="eye"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Confirm Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm password"
+required>
+
+<button
+type="button"
+id="toggleConfirmPassword"
+class="eye-button">
+
+<i data-lucide="eye"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<p id="passwordStrength" class="password-strength">
+    Password Strength : Weak
+</p>
+
+<label class="terms">
+
+    <input type="checkbox" required>
+
+    <span>
+
+        I agree to the
+        <a href="#">Terms of Service</a>
+        &
+        <a href="#">Privacy Policy</a>
+
+    </span>
+
+</label>
+
+<button
+type="submit"
+class="register-button">
+
+Create Account
+
+</button>
+
+<div class="divider">
+
+<span>
+
+OR
+
+</span>
+
+</div>
+
+<button
+type="button"
+class="google-button">
+
+Continue with Google
+
+</button>
+
+<p class="login-link">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/register.js"></script>
+
+</body>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+</html>

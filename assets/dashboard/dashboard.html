@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Mentora | Dashboard</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="../css/dashboard.css">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<div class="background-blur blur-one"></div>
+<div class="background-blur blur-two"></div>
+
+<div class="dashboard">
+
+<!-- ===================== -->
+<!-- Sidebar -->
+<!-- ===================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-circle">
+
+<i data-lucide="graduation-cap"></i>
+
+</div>
+
+<span>
+
+Mentora
+
+</span>
+
+</div>
+
+<nav>
+
+<a class="active">
+
+<i data-lucide="layout-dashboard"></i>
+
+<span>
+
+Dashboard
+
+</span>
+
+</a>
+
+<a>
+
+<i data-lucide="bot"></i>
+
+<span>
+
+AI Tutor
+
+</span>
+
+</a>
+
+<a>
+
+<i data-lucide="file-text"></i>
+
+<span>
+
+Ask PDF
+
+</span>
+
+</a>
+
+<a>
+
+<i data-lucide="notebook-pen"></i>
+
+<span>
+
+Summarizer
+
+</span>
+
+</a>
+
+<a>
+
+<i data-lucide="folder-open"></i>
+
+<span>
+
+My PDFs
+
+</span>
+
+</a>
+
+<a>
+
+<i data-lucide="messages-square"></i>
+
+<span>
+
+Chat History
+
+</span>
+
+</a>
+
+<div class="menu-divider"></div>
+
+<a>
+
+<i data-lucide="user-round"></i>
+
+<span>
+
+Profile
+
+</span>
+
+</a>
+
+<a>
+
+<i data-lucide="settings"></i>
+
+<span>
+
+Settings
+
+</span>
+
+</a>
+
+<a class="logout">
+
+<i data-lucide="log-out"></i>
+
+<span>
+
+Logout
+
+</span>
+
+</a>
+
+</nav>
+
+</aside>
+
+<!-- ===================== -->
+<!-- Main Content -->
+<!-- ===================== -->
+
+<main class="content">
+
+<header class="topbar">
+
+<div>
+
+<h1>
+
+Welcome Back,
+Prajwal 👋
+
+</h1>
+
+<p>
+
+Let's continue learning today.
+
+</p>
+
+</div>
+
+<div class="top-actions">
+
+<div class="search-box">
+
+<i data-lucide="search"></i>
+
+<input
+type="text"
+placeholder="Search PDFs, chats...">
+
+</div>
+
+<button class="icon-btn">
+
+<i data-lucide="bell"></i>
+
+</button>
+
+<button class="profile-btn">
+
+<img src="../assets/images/avatar.png"
+alt="Profile">
+
+</button>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>
+
+Your AI Learning Workspace
+
+</h2>
+
+<p>
+
+Upload PDFs, ask AI, generate summaries,
+create notes and master every subject.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary-btn">
+
+<i data-lucide="upload-cloud"></i>
+
+Upload PDF
+
+</button>
+
+<button class="secondary-btn">
+
+<i data-lucide="bot"></i>
+
+Open AI Tutor
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="hero-circle"></div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- Quick Actions -->
+<!-- ===================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <h3>Quick Actions</h3>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="quick-actions">
+
+        <div class="action-card upload">
+
+            <div class="card-icon">
+
+                <i data-lucide="upload-cloud"></i>
+
+            </div>
+
+            <h3>Upload PDF</h3>
+
+            <p>
+                Upload your study materials and
+                let AI analyze them instantly.
+            </p>
+
+            <button>
+
+                Upload Now
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </div>
+
+        <div class="action-card tutor">
+
+            <div class="card-icon">
+
+                <i data-lucide="bot"></i>
+
+            </div>
+
+            <h3>AI Tutor</h3>
+
+            <p>
+
+                Ask any question and receive
+                step-by-step explanations.
+
+            </p>
+
+            <button>
+
+                Start Chat
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </div>
+
+        <div class="action-card summary">
+
+            <div class="card-icon">
+
+                <i data-lucide="notebook-pen"></i>
+
+            </div>
+
+            <h3>Summarizer</h3>
+
+            <p>
+
+                Generate smart notes,
+                summaries and flashcards.
+
+            </p>
+
+            <button>
+
+                Open Tool
+
+                <i data-lucide="arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- Statistics -->
+<!-- ===================================== -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <span class="stat-number">
+
+            12
+
+        </span>
+
+        <span class="stat-title">
+
+            PDFs Uploaded
+
+        </span>
+
+        <i data-lucide="file-text"></i>
+
+    </div>
+
+    <div class="stat-card">
+
+        <span class="stat-number">
+
+            148
+
+        </span>
+
+        <span class="stat-title">
+
+            AI Chats
+
+        </span>
+
+        <i data-lucide="messages-square"></i>
+
+    </div>
+
+    <div class="stat-card">
+
+        <span class="stat-number">
+
+            37
+
+        </span>
+
+        <span class="stat-title">
+
+            Summaries
+
+        </span>
+
+        <i data-lucide="notebook-pen"></i>
+
+    </div>
+
+    <div class="stat-card">
+
+        <span class="stat-number">
+
+            28h
+
+        </span>
+
+        <span class="stat-title">
+
+            Study Time
+
+        </span>
+
+        <i data-lucide="clock-3"></i>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- Continue Learning -->
+<!-- ===================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <h3>
+
+            Continue Learning
+
+        </h3>
+
+    </div>
+
+    <div class="continue-card">
+
+        <div class="continue-left">
+
+            <div class="continue-icon">
+
+                <i data-lucide="book-open"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Computer Networks.pdf
+
+                </h3>
+
+                <p>
+
+                    Last Question:
+                    Explain TCP/IP Architecture
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="resume-btn">
+
+            Resume
+
+            <i data-lucide="play"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- Content Grid -->
+<!-- ===================================== -->
+
+<section class="content-grid">
+
+    <!-- ========================= -->
+    <!-- Recent PDFs -->
+    <!-- ========================= -->
+
+    <div class="glass-card">
+
+        <div class="section-header">
+
+            <h3>
+
+                Recent PDFs
+
+            </h3>
+
+            <a href="#">
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="pdf-list">
+
+            <div class="pdf-item">
+
+                <div class="pdf-info">
+
+                    <div class="pdf-icon">
+
+                        <i data-lucide="file-text"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Cloud Computing.pdf
+
+                        </h4>
+
+                        <span>
+
+                            Uploaded Yesterday • 42 Pages
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button>
+
+                    Open
+
+                </button>
+
+            </div>
+
+            <div class="pdf-item">
+
+                <div class="pdf-info">
+
+                    <div class="pdf-icon">
+
+                        <i data-lucide="file-text"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Banking Notes.pdf
+
+                        </h4>
+
+                        <span>
+
+                            Uploaded 2 Days Ago • 27 Pages
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button>
+
+                    Open
+
+                </button>
+
+            </div>
+
+            <div class="pdf-item">
+
+                <div class="pdf-info">
+
+                    <div class="pdf-icon">
+
+                        <i data-lucide="file-text"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Network Security.pdf
+
+                        </h4>
+
+                        <span>
+
+                            Uploaded Last Week • 51 Pages
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button>
+
+                    Open
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Right Sidebar -->
+    <!-- ========================= -->
+
+    <div class="right-column">
+
+        <!-- Study Streak -->
+
+        <div class="glass-card streak-card">
+
+            <div class="streak-icon">
+
+                🔥
+
+            </div>
+
+            <h2>
+
+                7 Day Streak
+
+            </h2>
+
+            <p>
+
+                You've studied every day this week.
+
+                Keep going!
+
+            </p>
+
+        </div>
+
+        <!-- AI Tip -->
+
+        <div class="glass-card tip-card">
+
+            <div class="tip-header">
+
+                <i data-lucide="sparkles"></i>
+
+                <span>
+
+                    AI Study Tip
+
+                </span>
+
+            </div>
+
+            <p>
+
+                Upload one chapter at a time.
+
+                Smaller documents usually produce
+
+                more accurate AI answers.
+
+            </p>
+
+        </div>
+
+        <!-- Recent Chats -->
+
+        <div class="glass-card">
+
+            <div class="section-header">
+
+                <h3>
+
+                    Recent Chats
+
+                </h3>
+
+            </div>
+
+            <div class="chat-history">
+
+                <div class="chat-item">
+
+                    <i data-lucide="bot"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Explain DNS
+
+                        </h4>
+
+                        <span>
+
+                            5 min ago
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="chat-item">
+
+                    <i data-lucide="bot"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Cloud Computing Summary
+
+                        </h4>
+
+                        <span>
+
+                            Yesterday
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="chat-item">
+
+                    <i data-lucide="bot"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Banking Quiz
+
+                        </h4>
+
+                        <span>
+
+                            2 Days Ago
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- Floating AI Button -->
+<!-- ===================================== -->
+
+<button class="floating-ai">
+
+    <i data-lucide="sparkles"></i>
+
+    <span>
+
+        Ask Mentora
+
+    </span>
+
+</button>
+
+</main>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+</body>
+
+</html>
