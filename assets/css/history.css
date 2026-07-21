@@ -1,0 +1,568 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --primary:#7C3AED;
+    --primary-light:#A855F7;
+    --cyan:#38BDF8;
+
+    --background:#08111F;
+    --surface:#111827;
+
+    --text:#F8FAFC;
+    --muted:#94A3B8;
+
+    --border:rgba(255,255,255,.08);
+
+    --shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+    background:var(--background);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+
+/*==============================
+BACKGROUND
+==============================*/
+
+.background-blur{
+
+    position:fixed;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(130px);
+    opacity:.30;
+    z-index:-1;
+
+}
+
+.blur-one{
+
+    background:#7C3AED;
+    top:-120px;
+    left:-120px;
+
+}
+
+.blur-two{
+
+    background:#38BDF8;
+    bottom:-180px;
+    right:-120px;
+
+}
+
+/*==============================
+LAYOUT
+==============================*/
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:280px 1fr;
+    min-height:100vh;
+
+}
+
+/*==============================
+SIDEBAR
+==============================*/
+
+.sidebar{
+
+    background:rgba(17,24,39,.90);
+    backdrop-filter:blur(20px);
+    border-right:1px solid var(--border);
+    padding:30px 22px;
+    position:sticky;
+    top:0;
+    height:100vh;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:45px;
+
+}
+
+.logo-circle{
+
+    width:58px;
+    height:58px;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+
+}
+
+.logo span{
+
+    font-size:24px;
+    font-weight:700;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.sidebar nav a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:var(--muted);
+    padding:15px 18px;
+    border-radius:16px;
+    transition:.35s;
+
+}
+
+.sidebar nav a:hover{
+
+    background:rgba(124,58,237,.12);
+    color:white;
+
+}
+
+.sidebar nav a.active{
+
+    color:white;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(124,58,237,.22),
+
+        rgba(124,58,237,.10)
+
+    );
+
+}
+
+/*==============================
+CONTENT
+==============================*/
+
+.content{
+
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+
+}
+
+.topbar h1{
+
+    font-size:34px;
+    margin-bottom:8px;
+
+}
+
+.topbar p{
+
+    color:var(--muted);
+
+}
+
+/*==============================
+SEARCH
+==============================*/
+
+.search-box{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:18px 22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.search-box input::placeholder{
+
+    color:var(--muted);
+
+}
+
+/*==============================
+FILTER
+==============================*/
+
+.history-filter{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.filter-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.filter-btn:hover{
+
+    background:rgba(124,58,237,.18);
+
+}
+
+.filter-btn.active{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--primary-light)
+
+    );
+
+}
+
+/*==============================
+SECTION
+==============================*/
+
+.history-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.history-section h2{
+
+    font-size:24px;
+
+}
+
+/*==============================
+LIST
+==============================*/
+
+.history-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/*==============================
+CARD
+==============================*/
+
+.history-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:22px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.history-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(124,58,237,.30);
+
+    box-shadow:0 15px 30px rgba(124,58,237,.18);
+
+}
+
+/*==============================
+ICON
+==============================*/
+
+.history-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--primary-light)
+
+    );
+
+}
+
+.history-icon svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+/*==============================
+INFO
+==============================*/
+
+.history-info{
+
+    flex:1;
+
+}
+
+.history-info h3{
+
+    margin-bottom:8px;
+
+    font-size:19px;
+
+}
+
+.history-info p{
+
+    color:var(--muted);
+
+}
+
+/*==============================
+ACTIONS
+==============================*/
+
+.history-actions{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.history-actions button{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.history-actions button:hover{
+
+    background:rgba(124,58,237,.20);
+
+    transform:translateY(-3px);
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .dashboard{
+
+        grid-template-columns:90px 1fr;
+
+    }
+
+    .logo span,
+    .sidebar nav span{
+
+        display:none;
+
+    }
+
+    .sidebar nav a{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .content{
+
+        padding:20px;
+
+    }
+
+    .history-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .history-actions{
+
+        width:100%;
+
+    }
+
+    .history-actions button{
+
+        flex:1;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .dashboard{
+
+        display:block;
+
+    }
+
+    .sidebar{
+
+        display:none;
+
+    }
+
+}
+
+/*==============================
+ANIMATION
+==============================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.history-card{
+
+    animation:fadeUp .4s ease;
+
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mentora | Settings</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/settings.css">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<div class="background-blur blur-one"></div>
+<div class="background-blur blur-two"></div>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-circle">
+<i data-lucide="graduation-cap"></i>
+</div>
+
+<span>Mentora</span>
+
+</div>
+
+<nav>
+
+<a href="../dashboard/dashboard.html">
+<i data-lucide="layout-dashboard"></i>
+<span>Dashboard</span>
+</a>
+
+<a href="tutor.html">
+<i data-lucide="bot"></i>
+<span>AI Tutor</span>
+</a>
+
+<a href="ask-pdf.html">
+<i data-lucide="file-text"></i>
+<span>Ask PDF</span>
+</a>
+
+<a href="summarizer.html">
+<i data-lucide="notebook-pen"></i>
+<span>Summarizer</span>
+</a>
+
+<a href="history.html">
+<i data-lucide="history"></i>
+<span>History</span>
+</a>
+
+<a class="active">
+<i data-lucide="settings"></i>
+<span>Settings</span>
+</a>
+
+<a href="profile.html">
+<i data-lucide="user"></i>
+<span>Profile</span>
+</a>
+
+</nav>
+
+</aside>
+
+<!-- Main -->
+
+<main class="content">
+
+<header class="topbar">
+
+<div>
+
+<h1>Settings</h1>
+
+<p>Customize your Mentora experience.</p>
+
+</div>
+
+<button class="save-btn">
+
+<i data-lucide="save"></i>
+
+Save Changes
+
+</button>
+
+</header>
+
+<div class="settings-grid">
+
+<!-- Account -->
+
+<section class="settings-card">
+
+<h2>
+
+<i data-lucide="user-circle"></i>
+
+Account
+
+</h2>
+
+<label>Full Name</label>
+
+<input type="text" id="name" value="Prajwal Karki">
+
+<label>Email</label>
+
+<input type="email" id="email" value="prajwal@email.com">
+
+<label>New Password</label>
+
+<input type="password" id="password" placeholder="••••••••">
+
+</section>
+
+<!-- Appearance -->
+
+<section class="settings-card">
+
+<h2>
+
+<i data-lucide="palette"></i>
+
+Appearance
+
+</h2>
+
+<label>Theme</label>
+
+<select id="theme">
+
+<option value="dark">Dark</option>
+
+<option value="light">Light</option>
+
+<option value="system">System</option>
+
+</select>
+
+</section>
+
+<!-- AI -->
+
+<section class="settings-card">
+
+<h2>
+
+<i data-lucide="bot"></i>
+
+AI Preferences
+
+</h2>
+
+<label>Response Length</label>
+
+<select id="response">
+
+<option>Short</option>
+
+<option selected>Medium</option>
+
+<option>Long</option>
+
+</select>
+
+<label>Default Summary Style</label>
+
+<select id="summary">
+
+<option>Paragraph</option>
+
+<option>Bullet Points</option>
+
+<option>Study Notes</option>
+
+<option>Exam Revision</option>
+
+</select>
+
+</section>
+
+<!-- Data -->
+
+<section class="settings-card danger">
+
+<h2>
+
+<i data-lucide="database"></i>
+
+Data Management
+
+</h2>
+
+<button class="danger-btn" id="clearHistory">
+
+Clear History
+
+</button>
+
+<button class="danger-btn" id="clearPDF">
+
+Delete Uploaded PDFs
+
+</button>
+
+</section>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/settings.js"></script>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+</body>
+
+</html>

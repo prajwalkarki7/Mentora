@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mentora | Ask PDF</title>
+
+    <meta name="description"
+          content="Upload your PDF and ask questions using AI">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../css/ask-pdf.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<div class="background-blur blur-one"></div>
+<div class="background-blur blur-two"></div>
+
+<div class="dashboard">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-circle">
+
+            <i data-lucide="graduation-cap"></i>
+
+        </div>
+
+        <span>Mentora</span>
+
+    </div>
+
+    <nav>
+
+        <a href="../dashboard/dashboard.html">
+
+            <i data-lucide="layout-dashboard"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+        <a href="tutor.html">
+
+            <i data-lucide="bot"></i>
+
+            <span>AI Tutor</span>
+
+        </a>
+
+        <a class="active">
+
+            <i data-lucide="file-text"></i>
+
+            <span>Ask PDF</span>
+
+        </a>
+
+        <a href="summarizer.html">
+
+            <i data-lucide="notebook-pen"></i>
+
+            <span>Summarizer</span>
+
+        </a>
+
+        <a>
+
+            <i data-lucide="folder-open"></i>
+
+            <span>My PDFs</span>
+
+        </a>
+
+        <a>
+
+            <i data-lucide="history"></i>
+
+            <span>History</span>
+
+        </a>
+
+        <div class="menu-divider"></div>
+
+        <a>
+
+            <i data-lucide="settings"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main class="content">
+
+<header class="topbar">
+
+    <div>
+
+        <h1>
+
+            Ask PDF
+
+        </h1>
+
+        <p>
+
+            Upload your documents and chat with them using AI.
+
+        </p>
+
+    </div>
+
+    <button class="upload-btn">
+
+        <i data-lucide="upload"></i>
+
+        Upload PDF
+
+    </button>
+
+</header>
+
+<!-- ================= PDF SECTION ================= -->
+
+<section class="pdf-section">
+
+<div class="upload-card">
+
+    <div class="upload-icon">
+
+        <i data-lucide="file-up"></i>
+
+    </div>
+
+    <h2>
+
+        Drag & Drop PDF
+
+    </h2>
+
+    <p>
+
+        Upload lecture notes, books, assignments or research papers.
+
+    </p>
+
+    <button>
+
+        Browse Files
+
+    </button>
+
+</div>
+
+<div class="pdf-list-card">
+
+    <div class="card-header">
+
+        <h2>
+
+            Uploaded PDFs
+
+        </h2>
+
+    </div>
+
+    <div class="pdf-list">
+        <!-- ================= PDF ITEM ================= -->
+
+<div class="pdf-item active">
+
+    <div class="pdf-icon">
+
+        <i data-lucide="file-text"></i>
+
+    </div>
+
+    <div class="pdf-info">
+
+        <h3>
+
+            Cloud_Computing.pdf
+
+        </h3>
+
+        <span>
+
+            124 Pages • Uploaded Today
+
+        </span>
+
+    </div>
+
+    <button>
+
+        Open
+
+    </button>
+
+</div>
+
+<div class="pdf-item">
+
+    <div class="pdf-icon">
+
+        <i data-lucide="book-open"></i>
+
+    </div>
+
+    <div class="pdf-info">
+
+        <h3>
+
+            Networking Notes.pdf
+
+        </h3>
+
+        <span>
+
+            87 Pages
+
+        </span>
+
+    </div>
+
+    <button>
+
+        Open
+
+    </button>
+
+</div>
+
+<div class="pdf-item">
+
+    <div class="pdf-icon">
+
+        <i data-lucide="folder"></i>
+
+    </div>
+
+    <div class="pdf-info">
+
+        <h3>
+
+            Linux Administration.pdf
+
+        </h3>
+
+        <span>
+
+            56 Pages
+
+        </span>
+
+    </div>
+
+    <button>
+
+        Open
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CHAT ================= -->
+
+<section class="chat-container">
+
+<div class="chat-header">
+
+    <div>
+
+        <h2>
+
+            Chat with your PDF
+
+        </h2>
+
+        <span>
+
+            AI understands your uploaded documents
+
+        </span>
+
+    </div>
+
+    <button class="clear-chat">
+
+        <i data-lucide="trash-2"></i>
+
+    </button>
+
+</div>
+
+<div class="messages">
+
+<div class="message ai">
+
+    <div class="avatar ai-avatar">
+
+        <i data-lucide="bot"></i>
+
+    </div>
+
+    <div class="bubble">
+
+        <strong>Mentora AI</strong>
+
+        <p>
+
+            👋 Your PDF has been processed successfully.
+
+            Ask me anything about this document.
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="message user">
+
+    <div class="bubble">
+
+        <strong>You</strong>
+
+        <p>
+
+            Explain virtualization in simple language.
+
+        </p>
+
+    </div>
+
+    <div class="avatar user-avatar">
+
+        P
+
+    </div>
+
+</div>
+
+<div class="message ai">
+
+    <div class="avatar ai-avatar">
+
+        <i data-lucide="bot"></i>
+
+    </div>
+
+    <div class="bubble">
+
+        <strong>Mentora AI</strong>
+
+        <p>
+
+            Virtualization is the technology that allows
+            one physical computer to run multiple
+            virtual computers using software called a
+            hypervisor.
+
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SUGGESTIONS ================= -->
+
+<section class="suggested">
+
+<h3>
+
+    Suggested Questions
+
+</h3>
+
+<div class="suggestion-grid">
+
+<button class="suggestion-card">
+
+Summarize this PDF
+
+</button>
+
+<button class="suggestion-card">
+
+Important exam questions
+
+</button>
+
+<button class="suggestion-card">
+
+Key definitions
+
+</button>
+
+<button class="suggestion-card">
+
+Explain Chapter 3
+
+</button>
+
+<button class="suggestion-card">
+
+Create notes
+
+</button>
+
+<button class="suggestion-card">
+
+Generate MCQs
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= INPUT ================= -->
+
+<section class="chat-input">
+
+<button class="tool-btn">
+
+<i data-lucide="paperclip"></i>
+
+</button>
+
+<textarea
+
+placeholder="Ask a question about your PDF..."
+
+rows="1">
+
+</textarea>
+
+<button class="send-btn">
+
+<i data-lucide="send"></i>
+
+</button>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../js/ask-pdf.js"></script>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+</body>
+
+</html>

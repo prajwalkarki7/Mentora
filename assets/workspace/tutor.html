@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mentora | AI Tutor</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../css/tutor.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<div class="background-blur blur-one"></div>
+<div class="background-blur blur-two"></div>
+
+<div class="dashboard">
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-circle">
+
+            <i data-lucide="graduation-cap"></i>
+
+        </div>
+
+        <span>Mentora</span>
+
+    </div>
+
+    <nav>
+
+        <a href="../dashboard/dashboard.html">
+
+            <i data-lucide="layout-dashboard"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+        <a class="active">
+
+            <i data-lucide="bot"></i>
+
+            <span>AI Tutor</span>
+
+        </a>
+
+        <a href="ask-pdf.html">
+
+            <i data-lucide="file-text"></i>
+
+            <span>Ask PDF</span>
+
+        </a>
+
+        <a href="summarizer.html">
+
+            <i data-lucide="notebook-pen"></i>
+
+            <span>Summarizer</span>
+
+        </a>
+
+        <a>
+
+            <i data-lucide="folder-open"></i>
+
+            <span>My PDFs</span>
+
+        </a>
+
+        <a>
+
+            <i data-lucide="history"></i>
+
+            <span>Chat History</span>
+
+        </a>
+
+        <div class="menu-divider"></div>
+
+        <a>
+
+            <i data-lucide="settings"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+<!-- ================= Main ================= -->
+
+<main class="content">
+
+<header class="topbar">
+
+    <div>
+
+        <h1>
+
+            AI Tutor
+
+        </h1>
+
+        <p>
+
+            Learn with your personal AI teacher.
+
+        </p>
+
+    </div>
+
+    <div class="top-actions">
+
+        <button class="new-chat">
+
+            <i data-lucide="plus"></i>
+
+            New Chat
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ================= Chat Area ================= -->
+
+<section class="chat-container">
+
+    <div class="chat-header">
+
+        <div>
+
+            <h2>
+
+                Mentora AI
+
+            </h2>
+
+            <span>
+
+                Powered by Ollama • Qwen 3.5
+
+            </span>
+
+        </div>
+
+        <div class="chat-actions">
+
+            <button>
+
+                <i data-lucide="copy"></i>
+
+            </button>
+
+            <button>
+
+                <i data-lucide="rotate-ccw"></i>
+
+            </button>
+
+            <button>
+
+                <i data-lucide="trash-2"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="messages">
+    
+        <!-- ================= AI Welcome ================= -->
+
+<div class="message ai">
+
+    <div class="avatar ai-avatar">
+
+        <i data-lucide="bot"></i>
+
+    </div>
+
+    <div class="bubble">
+
+        <div class="message-header">
+
+            <strong>Mentora AI</strong>
+
+            <span>Just now</span>
+
+        </div>
+
+        <p>
+
+            👋 Hello! I'm your AI Tutor.
+
+            Ask me anything about Programming,
+            Networking, Banking, Cloud Computing,
+            Mathematics or any other subject.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= User ================= -->
+
+<div class="message user">
+
+    <div class="bubble">
+
+        <div class="message-header">
+
+            <strong>You</strong>
+
+            <span>Just now</span>
+
+        </div>
+
+        <p>
+
+            Explain Cloud Computing in simple words.
+
+        </p>
+
+    </div>
+
+    <div class="avatar user-avatar">
+
+        P
+
+    </div>
+
+</div>
+
+<!-- ================= AI Answer ================= -->
+
+<div class="message ai">
+
+    <div class="avatar ai-avatar">
+
+        <i data-lucide="bot"></i>
+
+    </div>
+
+    <div class="bubble">
+
+        <div class="message-header">
+
+            <strong>Mentora AI</strong>
+
+            <span>Just now</span>
+
+        </div>
+
+        <p>
+
+            Cloud Computing means using computing
+            resources such as storage, software,
+            servers and databases over the Internet
+            instead of owning them yourself.
+
+        </p>
+
+        <ul>
+
+            <li>Access from anywhere</li>
+
+            <li>Pay only for what you use</li>
+
+            <li>Highly scalable</li>
+
+            <li>Easy collaboration</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- ================= Code Example ================= -->
+
+<div class="message ai">
+
+    <div class="avatar ai-avatar">
+
+        <i data-lucide="cpu"></i>
+
+    </div>
+
+    <div class="bubble code-message">
+
+        <div class="code-header">
+
+            <span>Python Example</span>
+
+            <button class="copy-code">
+
+                <i data-lucide="copy"></i>
+
+            </button>
+
+        </div>
+
+<pre><code>print("Hello Mentora")
+
+for i in range(5):
+    print(i)</code></pre>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- ================= Suggested Prompts ================= -->
+
+<section class="prompt-section">
+
+    <h3>
+
+        Suggested Questions
+
+    </h3>
+
+    <div class="prompt-grid">
+
+        <button class="prompt-card">
+
+            Explain TCP/IP
+
+        </button>
+
+        <button class="prompt-card">
+
+            Teach Python Loops
+
+        </button>
+
+        <button class="prompt-card">
+
+            Banking Interview Questions
+
+        </button>
+
+        <button class="prompt-card">
+
+            Explain DNS
+
+        </button>
+
+        <button class="prompt-card">
+
+            Cloud Computing Notes
+
+        </button>
+
+        <button class="prompt-card">
+
+            Linux Commands
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= Chat Input ================= -->
+
+<section class="chat-input">
+
+    <button class="tool-btn">
+
+        <i data-lucide="paperclip"></i>
+
+    </button>
+
+    <button class="tool-btn">
+
+        <i data-lucide="mic"></i>
+
+    </button>
+
+    <textarea
+
+        placeholder="Ask Mentora anything..."
+
+        rows="1">
+
+    </textarea>
+
+    <button class="send-btn">
+
+        <i data-lucide="send"></i>
+
+    </button>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../js/tutor.js"></script>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+</body>
+
+</html>
